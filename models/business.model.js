@@ -13,10 +13,12 @@ var businessSchema = new mongoose.Schema({
     },
     nearestTown:String,
     district:String,
-    cnum:String,
-    hp:Number,
+    contact:{
+        land:[Number],
+        mobile:[Number]
+    },  
     email:String,
-    pno:[Number],
+    imageIds:[String],
     location:{
         lat:Number,
         lng:Number} 
