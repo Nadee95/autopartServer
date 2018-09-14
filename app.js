@@ -5,6 +5,7 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var businessRouter = require('./routes/business.route');
+var partRouter=require('./routes/part.route');
 
 mongoose.connect('mongodb://127.0.0.1:27017/dbAutomobilePartslk',{uri_decode_auth: true}, (err, db) => {
   if (err) return console.log(err);
@@ -22,5 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', indexRouter);
 app.use('/api/business', businessRouter);
+app.use('/api/part',partRouter);
 
 module.exports = app;
