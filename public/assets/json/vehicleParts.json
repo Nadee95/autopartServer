@@ -1,0 +1,162 @@
+[
+	{
+	  "vehiclePart": "Body Parts",
+	  "vehicleSubPart": [
+		{
+		  "name": "Chassis",
+		  "code": "HA"
+		},
+		{
+		  "name":"Exterior body parts",
+		  "code":"HB"
+		},
+		{
+		  "name":"Interior body parts",
+		  "code":"HC"
+		},
+		{
+		  "name":"windscreen",
+		  "code":"HD"
+		},
+		{
+		  "name":"mirrors",
+		  "code":"HE"
+		},
+		{
+		"name":"Wheels",
+		"code":"HF"
+		},
+		{
+		  "name":"Tyres",
+		  "code":"HG"
+		},
+		{
+		  "name":"Rims",
+		  "code":"HH"
+		},
+		{
+		  "name":"Exhausts",
+		  "code":"HI"
+		},
+		{
+		  "name":"Exhausts parts",
+		  "code":"HJ"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Engine",
+	  "vehicleSubPart": [
+		{
+		  "name":"Engine parts",
+		  "code":"IA"
+		},
+		{
+		  "name":"Engine",
+		  "code":"IB"
+		},
+		{
+		  "name":"Belt chain",
+		  "code":"IC"
+		},
+		{
+		  "name":"Tensioners",
+		  "code":"ID"
+		},
+		{
+		  "name":"Fuel and engine management parts",
+		  "code":"IE"
+		},
+		{
+		  "name":"Ignition",
+		  "code":"IF"
+		},
+		{
+		  "name":"Steering",
+		  "code":"IG"
+		},
+		{
+		  "name":"Suspention",
+		  "code":"IH"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Transmission",
+	  "vehicleSubPart": [
+		{
+		  "name":"Gearbox",
+		  "code":"JA"
+		},
+		{
+		  "name":"Transmission parts",
+		  "code":"JB"
+		},
+		{
+		  "name":"Clutch and associated parts",
+		  "code":"JC"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Break",
+	  "vehicleSubPart": [
+		{
+		  "name":"Break and accessories",
+		  "code":"KA"
+		},
+		{
+		  "name":"Break hydraulic",
+		  "code":"KB"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Cooling",
+	  "vehicleSubPart": [
+		{
+		  "name":"Air Conditioning",
+		  "code":"LA"
+		},
+		{
+		  "name":"Cooling",
+		  "code":"LB"
+		},
+		{
+		  "name":"Heating",
+		  "code":"LC"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Electrical",
+	  "vehicleSubPart": [
+		{
+		  "name":"Electrical items and parts",
+		  "code":"MA"
+		},
+		{
+		  "name":"Ignition",
+		  "code":"MB"
+		},
+		{
+		  "name":"External lights and indicators",
+		  "code":"MC"
+		}
+	  ]
+	},
+	{
+	  "vehiclePart": "Other",
+	  "vehicleSubPart": [
+		{
+		  "name":"Seats",
+		  "code":"NA"
+		},
+		{
+		  "name":"Seat covers",
+		  "code":"NB"
+		}
+	  ]
+	}
+  ]
+  

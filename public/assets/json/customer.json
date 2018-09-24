@@ -1,0 +1,74 @@
+[
+	{	
+		"business"		:	"Store #01",
+		"name"			:	"Danapala",
+		"address"		:	"No.244,aguruwathota",
+		"nearestTown"	:	"Horana",
+		"district"		:	"Kalithara",
+		"contactNumber"	:	"0124578569",
+		"email"			:	"naiasd@email.com",
+		"hp"			:	"34234",
+		"photo_no"			:	"34234",
+		"lat"		:	"1233",
+		"Lon"			:	"22443"
+
+	},
+	{	
+		"business"		:	"Store #02",
+		"name"			:	"Sumanadasa",
+		"address"		:	"No43,agalawaththa",
+		"nearestTown"	:	"Mathugama",
+		"district"		:	"Kalithara",
+		"contactNumber"	:	"0755652325",
+		"email"			:	"wqqqwwqq@gmail.com",
+		"hp"			:	"5675",
+		"photo_no"			:	"34234",
+		"lat"		:	"3453",
+		"Lon"			:	"37772"
+
+	},
+	{	
+		"business"		:	"Store #03",
+		"name"			:	"Amaradasa",
+		"address"		:	"No.100,colombo rd",
+		"nearestTown"	:	"boralasgamuwa",
+		"district"		:	"colombo",
+		"contactNumber"	:	"01136256523",
+		"email"			:	"olololo@gHotmail.com",
+		"hp"			:	"4655",
+		"photo_no"			:	"34234",
+		"lat"		:	"111111",
+		"Lon"			:	"89656"
+
+	},
+	{	
+		"business"		:	"Store #04",
+		"name"			:	"Nandana",
+		"address"		:	"No43,agalawaththa",
+		"nearestTown"	:	"Kadhana",
+		"district"		:	"Kalithara",
+		"contactNumber"	:	"0755652325",
+		"email"			:	"wqqqwwqq@gmail.com",
+		"hp"			:	"5675",
+		"photo_no"			:	"34234",
+		"lat"		:	"3453",
+		"Lon"			:	"37772"
+
+	},
+	{	
+		"business"		:	"Store #05",
+		"name"			:	"Charlie",
+		"address"		:	"No.100,colombo rd",
+		"nearestTown"	:	"boralasgamuwa",
+		"district"		:	"Chilow",
+		"contactNumber"	:	"01136256523",
+		"email"			:	"olololo@gHotmail.com",
+		"hp"			:	"4655",
+		"photo_no"			:	"34234",
+		"lat"		:	"111111",
+		"Lon"			:	"89656"
+
+	}
+
+
+]

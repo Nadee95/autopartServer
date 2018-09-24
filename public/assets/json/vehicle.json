@@ -1,0 +1,63 @@
+[
+	{
+		"vehicleType"	:	"Car",
+		"brands"		:	["Maruti","Mazda","Mercedes Benz","MG","Micro","Mini","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tata","Toyota","Volkswagen","Volvo"]
+	},
+	{
+		"vehicleType"	:	"Van",
+		"brands"		:	["Maruti","Mazda","Mercedes Benz","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"jeep",
+		"brands"		:	["Maruti","Mazda","Mercedes Benz","MG","Micro","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Crew cab",
+		"brands"		:	["Maruti","Mazda","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Pickup",
+		"brands"		:	["Maruti","Mazda","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Bus",
+		"brands"		:	["Maruti","Mazda","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Lorry",
+		"brands"		:	["Maruti","Mazda","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Truck",
+		"brands"		:	["Maruti","Mazda","Mitshubishi","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Three Wheel",
+		"brands"		:	["Maruti","Mazda","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Tractor",
+		"brands"		:	["Maruti","Massey Ferguson","Mazda","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Heavy Duty",
+		"brands"		:	["Maruti","Mazda","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Mortor Bike",
+		"brands"		:	["Maruti","Mazda","Micro","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Hybrid",
+		"brands"		:	["Maruti","Mazda","Micro","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	},
+	{
+		"vehicleType"	:	"Electric",
+		"brands"		:	["Maruti","Massey Ferguson","Mazda","Micro","Mini","Mitshubishi","New Holland","Nissan","Opel","Perodu","Peugeot","Piaggio","Porsche","Proton","Renault","Saab","Scion","Seat","Skoda","Ssang Yong","Subaru","Suzuki","Tafe","Tata","Toyota","TVS","Vauxhall","Volkswagen","Volvo","Yamaha"]
+	}
+
+]
+
+
+
+

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Part = require('../models/part.model');
+var Part = require('../models/carPart.model');
 
 /* GET users listing. */
 router.post('/add', function(req, res, next) {

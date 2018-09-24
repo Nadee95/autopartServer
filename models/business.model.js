@@ -5,23 +5,17 @@ var Schema = mongoose.Schema();
 var businessSchema = new mongoose.Schema({
 
     bName:String,
-    owner:String,
-    address:{
-        line1:String,
-        line2:String,
-        city:String
-    },
+    owner: String,
+    address: String,
     nearestTown:String,
     district:String,
-    contact:{
-        land:[Number],
-        mobile:[Number]
-    },  
+    contacts:[String],  
     email:String,
     imageIds:[String],
     location:{
         lat:Number,
-        lng:Number} 
+        lng:Number},
+    parts:[String]
 });
 
 module.exports = mongoose.model('Business',businessSchema );

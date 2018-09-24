@@ -1,0 +1,401 @@
+{
+    "brands": [
+        {
+            "logo": "/Acura.png",
+            "name": "Acura"
+        },
+        {
+            "logo": "/Ashok Leyland.png",
+            "name": "Ashok Leyland"
+        },
+        {
+            "logo": "/Atlas Copco.png",
+            "name": "Atlas Copco"
+        },
+        {
+            "logo": "/Audi.png",
+            "name": "Audi"
+        },
+        {
+            "logo": "/Ausa.png",
+            "name": "Ausa"
+        },
+        {
+            "logo": "/BMW.png",
+            "name": "BMW"
+        },
+        {
+            "logo": "/BMW.png",
+            "name": "BMW"
+        },
+        {
+            "logo": "/BOMAG.png",
+            "name": "BOMAG"
+        },
+        {
+            "logo": "/BOSTITCH.png",
+            "name": "BOSTITCH"
+        },
+        {
+            "logo": "/Bajaj.png",
+            "name": "Bajaj"
+        },
+        {
+            "logo": "/Buick.png",
+            "name": "Buick"
+        },
+        {
+            "logo": "/CASE.png",
+            "name": "CASE"
+        },
+        {
+            "logo": "/CAT.png",
+            "name": "CAT"
+        },
+        {
+            "logo": "/CATERPILLAR.png",
+            "name": "CATERPILLAR"
+        },
+        {
+            "logo": "/CORMIDI.png",
+            "name": "CORMIDI"
+        },
+        {
+            "logo": "/Chevrolet.png",
+            "name": "Chevrolet"
+        },
+        {
+            "logo": "/Cummins.png",
+            "name": "Cummins"
+        },
+        {
+            "logo": "/DAEWOO.png",
+            "name": "DAEWOO"
+        },
+        {
+            "logo": "/DOOSAN.png",
+            "name": "DOOSAN"
+        },
+        {
+            "logo": "/Dacia.png",
+            "name": "Dacia"
+        },
+        {
+            "logo": "/Daewoo.png",
+            "name": "Daewoo"
+        },
+        {
+            "logo": "/Daihatsu.png",
+            "name": "Daihatsu"
+        },
+        {
+            "logo": "/DeWALT.png",
+            "name": "DeWALT"
+        },
+        {
+            "logo": "/Demak.png",
+            "name": "Demak"
+        },
+        {
+            "logo": "/Dimo.png",
+            "name": "Dimo"
+        },
+        {
+            "logo": "/Dodge.png",
+            "name": "Dodge"
+        },
+        {
+            "logo": "/Ducati.png",
+            "name": "Ducati"
+        },
+        {
+            "logo": "/Eicher.png",
+            "name": "Eicher"
+        },
+        {
+            "logo": "/Escort.png",
+            "name": "Escort"
+        },
+        {
+            "logo": "/Fiat.png",
+            "name": "Fiat"
+        },
+        {
+            "logo": "/Ford.png",
+            "name": "Ford"
+        },
+        {
+            "logo": "/GENERAC.png",
+            "name": "GENERAC"
+        },
+        {
+            "logo": "/HILTI.png",
+            "name": "HILTI"
+        },
+        {
+            "logo": "/HONDA.png",
+            "name": "HONDA"
+        },
+        {
+            "logo": "/HYUNDAI.png",
+            "name": "HYUNDAI"
+        },
+        {
+            "logo": "/Hero-Honda.png",
+            "name": "Hero-Honda"
+        },
+        {
+            "logo": "/Hero.png",
+            "name": "Hero"
+        },
+        {
+            "logo": "/Honda.png",
+            "name": "Honda"
+        },
+        {
+            "logo": "/Honda.png",
+            "name": "Honda"
+        },
+        {
+            "logo": "/Hyundai.png",
+            "name": "Hyundai"
+        },
+        {
+            "logo": "/Isuzu.png",
+            "name": "Isuzu"
+        },
+        {
+            "logo": "/Iveco.png",
+            "name": "Iveco"
+        },
+        {
+            "logo": "/JCB.png",
+            "name": "JCB"
+        },
+        {
+            "logo": "/Jaguar.png",
+            "name": "Jaguar"
+        },
+        {
+            "logo": "/Jeep.png",
+            "name": "Jeep"
+        },
+        {
+            "logo": "/John Deere.png",
+            "name": "John Deere"
+        },
+        {
+            "logo": "/KOMATSU.png",
+            "name": "KOMATSU"
+        },
+        {
+            "logo": "/Kawasaki.png",
+            "name": "Kawasaki"
+        },
+        {
+            "logo": "/Kia.png",
+            "name": "Kia"
+        },
+        {
+            "logo": "/LIEBHERR.png",
+            "name": "LIEBHERR"
+        },
+        {
+            "logo": "/Land Rover.png",
+            "name": "Land Rover"
+        },
+        {
+            "logo": "/Leaf.png",
+            "name": "Leaf"
+        },
+        {
+            "logo": "/Lexus.png",
+            "name": "Lexus"
+        },
+        {
+            "logo": "/MERLO.png",
+            "name": "MERLO"
+        },
+        {
+            "logo": "/MG.png",
+            "name": "MG"
+        },
+        {
+            "logo": "/Mahindra.png",
+            "name": "Mahindra"
+        },
+        {
+            "logo": "/Maruti.png",
+            "name": "Maruti"
+        },
+        {
+            "logo": "/Massey Ferguson.png",
+            "name": "Massey Ferguson"
+        },
+        {
+            "logo": "/Mazda.png",
+            "name": "Mazda"
+        },
+        {
+            "logo": "/Mercedes Benz.png",
+            "name": "Mercedes Benz"
+        },
+        {
+            "logo": "/Micro.png",
+            "name": "Micro"
+        },
+        {
+            "logo": "/Mini.png",
+            "name": "Mini"
+        },
+        {
+            "logo": "/Mitsubishi.png",
+            "name": "Mitsubishi"
+        },
+        {
+            "logo": "/Mitsubishi.png",
+            "name": "Mitsubishi"
+        },
+        {
+            "logo": "/New Holland.png",
+            "name": "New Holland"
+        },
+        {
+            "logo": "/Nissan.png",
+            "name": "Nissan"
+        },
+        {
+            "logo": "/OZTEC.png",
+            "name": "OZTEC"
+        },
+        {
+            "logo": "/Opel.png",
+            "name": "Opel"
+        },
+        {
+            "logo": "/Perodua.png",
+            "name": "Perodua"
+        },
+        {
+            "logo": "/Peugeot.png",
+            "name": "Peugeot"
+        },
+        {
+            "logo": "/Piaggio.png",
+            "name": "Piaggio"
+        },
+        {
+            "logo": "/Porsche.png",
+            "name": "Porsche"
+        },
+        {
+            "logo": "/Proton.png",
+            "name": "Proton"
+        },
+        {
+            "logo": "/REMINGTON.png",
+            "name": "REMINGTON"
+        },
+        {
+            "logo": "/Renault.png",
+            "name": "Renault"
+        },
+        {
+            "logo": "/SENCO.png",
+            "name": "SENCO"
+        },
+        {
+            "logo": "/STIHL.png",
+            "name": "STIHL"
+        },
+        {
+            "logo": "/Saab.png",
+            "name": "Saab"
+        },
+        {
+            "logo": "/Scion.png",
+            "name": "Scion"
+        },
+        {
+            "logo": "/Seat.png",
+            "name": "Seat"
+        },
+        {
+            "logo": "/Skoda.png",
+            "name": "Skoda"
+        },
+        {
+            "logo": "/SsangYong.png",
+            "name": "SsangYong"
+        },
+        {
+            "logo": "/Subaru.png",
+            "name": "Subaru"
+        },
+        {
+            "logo": "/Suzuki.png",
+            "name": "Suzuki"
+        },
+        {
+            "logo": "/Suzuki.png",
+            "name": "Suzuki"
+        },
+        {
+            "logo": "/TATA.png",
+            "name": "TATA"
+        },
+        {
+            "logo": "/TEREX.png",
+            "name": "TEREX"
+        },
+        {
+            "logo": "/TOYOTA.png",
+            "name": "TOYOTA"
+        },
+        {
+            "logo": "/TVS.png",
+            "name": "TVS"
+        },
+        {
+            "logo": "/Tafe.png",
+            "name": "Tafe"
+        },
+        {
+            "logo": "/Thwaites.png",
+            "name": "Thwaites"
+        },
+        {
+            "logo": "/VOLVO.png",
+            "name": "VOLVO"
+        },
+        {
+            "logo": "/Vauxhall.png",
+            "name": "Vauxhall"
+        },
+        {
+            "logo": "/Volkswagen.png",
+            "name": "Volkswagen"
+        },
+        {
+            "logo": "/Volvo.png",
+            "name": "Volvo"
+        },
+        {
+            "logo": "/YANMAR.png",
+            "name": "YANMAR"
+        },
+        {
+            "logo": "/Yamaha.png",
+            "name": "Yamaha"
+        },
+        {
+            "logo": "/kubota.png",
+            "name": "kubota"
+        },
+        {
+            "logo": "/takeuchi.png",
+            "name": "takeuchi"
+        }
+    ],
+    "type": "vehicle"
+}
