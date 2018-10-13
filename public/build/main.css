@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25678,6 +25679,11 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
 page-add-parts-to-business .item-button {
   border: 1px solid gray !important;
   margin-top: 1em;
@@ -25690,7 +25696,8 @@ page-add-parts-to-business .radioy, page-add-parts-to-business .radioy div {
 
 .radiox {
   height: 60px;
-  border: solid 1px #21A0A0;
+  border: solid 1px #776264;
+  background-color: #C4C2AB;
   padding: 0px;
 }
 
@@ -25706,16 +25713,16 @@ page-add-parts-to-business .radioy, page-add-parts-to-business .radioy div {
 
 .radioy {
   padding: 1em 0em;
-  border: solid 1px #21A0A0;
+  border: solid 1px #776264;
 }
 
 .radioy div {
-  color: #21A0A0;
+  color: #776264;
 }
 
 .radioy-select {
-  border-color: #21A0A0;
-  background-color: #21A0A0;
+  border-color: #776264;
+  background-color: #776264;
 }
 
 .radioy-select div {
@@ -25723,18 +25730,24 @@ page-add-parts-to-business .radioy, page-add-parts-to-business .radioy div {
 }
 
 .radio-select {
-  border-color: #21A0A0;
-  background-color: #21A0A0;
+  border-color: #776264;
+  background-color: #776264;
 }
 
 .radio-select img {
   -webkit-filter: none;
   filter: none;
-  background-color: #21A0A0;
+  background-color: #776264;
 }
 
 page-home .textField {
   color: black;
+}
+
+page-home .form-col {
+  background-color: rgba(19, 28, 25, 0.83);
+  padding: 30px 20px;
+  border-radius: 20px;
 }
 
 page-home #vtypeRow {
@@ -25752,22 +25765,87 @@ page-home .item-select {
   width: 100%;
 }
 
+page-home .main-head {
+  font-family: 'Roboto', 'Arial';
+  font-size: 6em;
+  font-weight: 350;
+}
+
 page-home ion-content {
-  /*background-image: url('../../assets/imgs/bg_pattern2.png');
-    background-attachment: fixed;
-background-repeat: repeat;*/
+  background-color: #C4C2AB !important;
+  background-image: url("../../assets/imgs/pattern.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 page-home ion-list ion-item, page-home ion-list .item-button, page-home ion-list .item-select {
-  border: solid 1px #21A0A0 !important;
   border-radius: 20px;
+  background-color: #776264;
   margin-bottom: 1.2rem;
-  color: #046865;
+  color: white;
 }
 
 page-home #btnSubmit {
-  background-color: #21A0A0 !important;
+  background-color: #9C1617 !important;
   padding: 30px 1em !important;
+}
+
+.form-container {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.alert-bar {
+  background-color: #9C1617;
+  color: white;
+  font-size: 1.2em;
+}
+
+.alert-bar button {
+  color: #B7885C !important;
+  border-color: #B7885C !important;
+  padding: 2px 10px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .form-container {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-align-self: center !important;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .form-container {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-align-self: center !important;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .alert-bar {
+    font-size: 0.9em;
+  }
 }
 
 page-vehicle-brands .vehicle-thumb {
