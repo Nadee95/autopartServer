@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization");
   next();
 });*/
-//
+////
 app.use('/api', indexRouter);
 app.use('/api/business', businessRouter);
 app.use('/api/part',partRouter);
