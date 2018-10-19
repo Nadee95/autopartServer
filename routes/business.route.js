@@ -3,7 +3,7 @@ var router = express.Router();
 var Business = require('../models/business.model');
 var mongoose = require('mongoose')
 
-///////////////////////////////////
+/*
 //set the directory for the uploads to the uploaded to
 var DIR = './uploads/';
 
@@ -44,7 +44,7 @@ router.post('/add', function (req, res,next) {
       return res.json({ status: 200, message: "SUCCESSFUL" });
     });
   });
-/////////////////////
+//////////////////// 
 
 /* GET users listing. */
 /*router.post('/add', function (req, res, next) {
