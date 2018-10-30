@@ -12,14 +12,10 @@ var businessSchema = new mongoose.Schema({
     contacts:[String],  
     email:String,
     imageIds:[String],
-    content:{
-        fileId:String,
-        fileType:String,
-        fileName:String
-    },
+    fname:String,
     location:{
         lat:Number,
-        lng:Number},
+        lon:Number},
     parts:[String]
 });
 
