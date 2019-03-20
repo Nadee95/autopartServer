@@ -14,33 +14,36 @@ var storage = multer.diskStorage({
     cb(null, './public/business')
   },
   filename: function (req, file, cb) {
-    let o= file.originalname;
-    let ext =o.substring(o.lastIndexOf('.'), o.length);
-    let fname= namify(req.body.bName + '-' + Date.now()+ext);
-    req.body.fname=fname;
-    cb(null,fname);
+    let o = file.originalname;
+    let ext = o.substring(o.lastIndexOf('.'), o.length);
+    let fname = namify(req.body.bName + '-' + Date.now() + ext).replace(' ','_');
+    cb(null, fname);
   }
 });
 
-var upload = multer({ storage: storage }).single('file');
+var upload = multer({ storage: storage }).array('files',4);
 
-router.post('/add', function (req, res,next) {
+router.post('/add', function (req, res, next) {
   upload(req, res, function (err) {
     if (err) {
-      return res.json({status:500,message:"upload_error"});
+      return res.json({ status: 500, message: "upload_error" });
     }
     next();
   })
-  },
-  function(req,res){
+},
+  function (req, res) {
+    console.log(req.body);
     var business = new Business(req.body);
-    business.location=JSON.parse(req.body.location);
-   // business.content.fileId = req.file.filename;
+    business.location = JSON.parse(req.body.location);
+    business.contacts = req.body.contacts.split(",");
+    req.files.forEach(file => {
+     business.imageIds.push(file.filename);
+    });
+    // business.content.fileId = req.file.filename;
     //business.content.fileType=req.file.mimetype;
     //var o = req.file.originalname;
     //let ext = o.substring(o.lastIndexOf('.'), o.length);
-   // business.content.fileName = (namify(req.body.bName) + ext).replace(' ','_');
-    business.fname=req.body.fname;
+   
     business.save(function (err) {
       if (err) {
         return res.json({ status: 500, message: "ERROR_CREATE", data: err.message });
@@ -68,17 +71,31 @@ router.post('/:businessId/addParts', function (req, res, next) {
   console.log(req.body);
   Business.findOneAndUpdate({ '_id': mongoose.Types.ObjectId(id) }, { $addToSet: { parts: req.body } }, (function (err) {
     if (err) {
-      return res.json({ status: 500, message: "ERROR_CREATE", data: err.message });
+      return res.status(500).json({message: "ERROR_CREATE", data: err.message });
     }
-    return res.json({ status: 200, message: "SUCCESSFUL" });
+    return res.status(200).json({message: "SUCCESSFUL" });
   })
   );
 })
 
+router.post('/:businessId/deleteParts', function (req, res, next) {
+  let id = req.params.businessId;
+  mgi = mongoose.Types.ObjectId(id);
+  console.log(req.body);
+  Business.findOneAndUpdate({ '_id': mongoose.Types.ObjectId(id) }, { $pull: { 'parts':  {$in: req.body} }}, (function (err) {
+    if (err) {
+      return res.status(500).json({message: "ERROR_DELETE", data: err.message });
+    }
+    return res.status(200).json({message: "SUCCESSFUL" });
+  })
+  );
+})
+
+
 router.get('/', function (req, res, next) {
   let search = req.query.search;
   if (search) {
-    Business.find({$text:{$search:search}},{bName:1, owner:1,address:1}, (function (err,business) {
+    Business.find({ $text: { $search: search } }, { bName: 1, owner: 1, address: 1 }, (function (err, business) {
       if (err) {
         return res.json({ status: 500, message: "ERROR_SEARCH", data: err.message });
       }
@@ -88,53 +105,137 @@ router.get('/', function (req, res, next) {
   }
 })
 
-router.get('/findByPart',function (req, res, next) {
+router.get('/findByPart', function (req, res, next) {
   let tag = req.query.tag;
   let district = req.query.district;
+  let town = req.query.town;
   console.log(tag + ' ' + district);
-  if (tag && district) {
-    Business.find({parts:tag,district:district},{bName:1,address:1,fname:1}, (function (err,business) {
+  if (tag && district && town) {
+    Business.find({ parts: tag, district: district, nearestTown: town }, { bName: 1, address: 1, fname: 1, imageIds:1 }, (function (err, business) {
       if (err) {
-        return res.json({ status: 500, message: "ERROR_CREATE", data: err.message });
+        return res.status(500).json({ message: "ERROR_CREATE", data: err.message });
       }
-      return res.json({status:200,data:business});
+      return res.status(200).json({ data: business });
     })
     );
-  }else{
-    return res.json({status:400,message:"INSUFF_PARAMS"});
+  } else {
+    return res.status(400).json({ message: "INSUFFICIENT_PARAMS" });
   }
- 
+
 })
 
-router.get('/gettowns',function (req, res, next) {
+router.get('/gettowns', function (req, res, next) {
   let tag = req.query.tag;
   let district = req.query.district;
   if (tag && district) {
-    Business.distinct('nearestTown',{parts:tag,district:district}, (function (err,towns) {
+    Business.distinct('nearestTown', { parts: tag, district: district }, (function (err, towns) {
       if (err) {
         return res.json({ status: 500, message: "ERROR_CREATE", data: err.message });
       }
-      return res.json({status:200,data:towns});
+      return res.json({ status: 200, data: towns });
     })
     );
   }
 })
 
-router.get('/:id/info',function (req, res, next) {
+router.get('/:id/info', function (req, res, next) {
   let id = req.params.id;
   mgi = mongoose.Types.ObjectId(id);
 
   if (id) {
-    Business.findById(id,{}, (function (err,business) {
+    Business.findById(id, {}, (function (err, business) {
       if (err) {
-        return res.json({ status: 500, message: "ERROR_RETRIEVE", data: err.message });
+        return res.status(500).json({message: "ERROR_RETRIEVE", data: err.message });
       }
-      return res.json({status:200,data:business});
+      return res.status(200).json({data: business });
     })
     );
-  }else{
-    return res.json({status:304,message:"NO_ID"});
+  } else {
+    return res.status(304).json({ message: "NO_ID" });
+  }
+})
+
+router.get('/:id/getPartVTypes', function (req, res, next) {
+  let id = req.params.id;
+  mgi = mongoose.Types.ObjectId(id);
+  if (id) {
+    Business.aggregate([{
+      $match: { "_id": mgi }
+    },
+    {
+      $unwind: "$parts"
+    },
+    {
+      $project: {
+        parts: { $substr: ["$parts", 0, 1] }
+      }
+    }, {
+      $group: {
+        _id: "$_id",
+        parts: { $addToSet: "$parts" }
+      }
+    }], (function (err, parts) {
+      if (err) {
+        return res.status(500).json({ message: "ERROR_RETRIEVE", data: err.message });
+      }
+      return res.status(200).json(parts);
+    }));
+  } else {
+    return res.statusCode(304).json({ message: "NO_ID" });
   }
 
 })
+
+router.get('/:id/getparts', function (req, res, next) {
+  var id = req.params.id;
+  var level = req.query.lvl;
+  const expr = req.query.exp;
+  var xto = 0;
+  var xfrom = 0;
+  mgi = mongoose.Types.ObjectId(id);
+  regex = new RegExp("^" + expr + "[A-Z]\w*");
+  console.log(level);
+  if (level == 1) {
+    xto = 1;
+    xfrom = 2;
+  }else if (level == 2) {
+    xto = 3; xfrom = 1;
+  }else if(level == 3){
+    xto = 4; xfrom = 2;
+  }else {
+    xto = 6; xfrom = 2;
+  }
+
+  console.log(xto + " " + xfrom);
+  if (id) {
+  Business.aggregate([{
+    $match: { "_id": mgi }
+  },
+  {
+    $unwind: "$parts"
+  }, {
+    $match: {
+      parts: { $regex: regex }
+    }
+  },
+  {
+    $project: {
+      parts: { $substr: ["$parts", xto, xfrom] }
+    }
+  }, {
+    $group: {
+      _id: "$_id",
+      parts: { $addToSet: "$parts" }
+    }
+  }], (function (err, parts) {
+    if (err) {
+      return res.status(500).json({ message: "ERROR_RETRIEVE", data: err.message });
+    }
+    return res.status(200).json(parts[0]);
+  }));
+} else {
+  return res.statusCode(304).json({ message: "NO_ID" });
+}
+})
+
 module.exports = router;
