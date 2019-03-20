@@ -34,5 +34,7 @@ app.use(function (req, res, next) {
 app.use('/api', indexRouter);
 app.use('/api/business', businessRouter);
 app.use('/api/part',partRouter);
-
+app.use( '*', function ( req, res ) {
+  res.sendfile(path.join(__dirname, '/public/index.html'));
+});
 module.exports = app;
