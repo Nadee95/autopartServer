@@ -7,6 +7,19 @@
 		  "code": "HA"
 		},
 		{
+			"vehiclePart": "Sub body oart",
+			"vehicleSubPart": [
+				{
+					"name":"Exterior body parts",
+					"code":"HB"
+				},
+				{
+					"name":"Interior body parts",
+					"code":"HC"
+				}
+			]
+		},
+		{
 		  "name":"Exterior body parts",
 		  "code":"HB"
 		},
