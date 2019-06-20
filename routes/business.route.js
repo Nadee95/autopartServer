@@ -199,9 +199,9 @@ router.get('/:id/getparts', function (req, res, next) {
     xto = 1;
     xfrom = 2;
   }else if (level == 2) {
-    xto = 3; xfrom = 1;
+    xto = 3; xfrom = 2;
   }else if(level == 3){
-    xto = 4; xfrom = 2;
+    xto = 5; xfrom = 1;
   }else {
     xto = 6; xfrom = 2;
   }

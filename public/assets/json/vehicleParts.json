@@ -1,175 +1,685 @@
 [
-	{
-	  "vehiclePart": "Body Parts",
-	  "vehicleSubPart": [
-		{
-		  "name": "Chassis",
-		  "code": "HA"
-		},
-		{
-			"vehiclePart": "Sub body oart",
-			"vehicleSubPart": [
-				{
-					"name":"Exterior body parts",
-					"code":"HB"
-				},
-				{
-					"name":"Interior body parts",
-					"code":"HC"
-				}
-			]
-		},
-		{
-		  "name":"Exterior body parts",
-		  "code":"HB"
-		},
-		{
-		  "name":"Interior body parts",
-		  "code":"HC"
-		},
-		{
-		  "name":"windscreen",
-		  "code":"HD"
-		},
-		{
-		  "name":"mirrors",
-		  "code":"HE"
-		},
-		{
-		"name":"Wheels",
-		"code":"HF"
-		},
-		{
-		  "name":"Tyres",
-		  "code":"HG"
-		},
-		{
-		  "name":"Rims",
-		  "code":"HH"
-		},
-		{
-		  "name":"Exhausts",
-		  "code":"HI"
-		},
-		{
-		  "name":"Exhausts parts",
-		  "code":"HJ"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Engine",
-	  "vehicleSubPart": [
-		{
-		  "name":"Engine parts",
-		  "code":"IA"
-		},
-		{
-		  "name":"Engine",
-		  "code":"IB"
-		},
-		{
-		  "name":"Belt chain",
-		  "code":"IC"
-		},
-		{
-		  "name":"Tensioners",
-		  "code":"ID"
-		},
-		{
-		  "name":"Fuel and engine management parts",
-		  "code":"IE"
-		},
-		{
-		  "name":"Ignition",
-		  "code":"IF"
-		},
-		{
-		  "name":"Steering",
-		  "code":"IG"
-		},
-		{
-		  "name":"Suspention",
-		  "code":"IH"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Transmission",
-	  "vehicleSubPart": [
-		{
-		  "name":"Gearbox",
-		  "code":"JA"
-		},
-		{
-		  "name":"Transmission parts",
-		  "code":"JB"
-		},
-		{
-		  "name":"Clutch and associated parts",
-		  "code":"JC"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Break",
-	  "vehicleSubPart": [
-		{
-		  "name":"Break and accessories",
-		  "code":"KA"
-		},
-		{
-		  "name":"Break hydraulic",
-		  "code":"KB"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Cooling",
-	  "vehicleSubPart": [
-		{
-		  "name":"Air Conditioning",
-		  "code":"LA"
-		},
-		{
-		  "name":"Cooling",
-		  "code":"LB"
-		},
-		{
-		  "name":"Heating",
-		  "code":"LC"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Electrical",
-	  "vehicleSubPart": [
-		{
-		  "name":"Electrical items and parts",
-		  "code":"MA"
-		},
-		{
-		  "name":"Ignition",
-		  "code":"MB"
-		},
-		{
-		  "name":"External lights and indicators",
-		  "code":"MC"
-		}
-	  ]
-	},
-	{
-	  "vehiclePart": "Other",
-	  "vehicleSubPart": [
-		{
-		  "name":"Seats",
-		  "code":"NA"
-		},
-		{
-		  "name":"Seat covers",
-		  "code":"NB"
-		}
-	  ]
-	}
-  ]
-  
+  {
+    "vehiclePart": "Air Conditioning / Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Compressor / Parts",
+        "code": "AB"
+      },
+      {
+        "name": "Controls Regulation",
+        "code": "AC"
+      },
+      {
+        "name": "Dryer ",
+        "code": "AD"
+      },
+      {
+        "name": "Sensors",
+        "code": "AE"
+      },
+      {
+        "name": "Valves",
+        "code": "AF"
+      },
+      {
+        "name": "Vaporizer",
+        "code": "AG"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Suspension / Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Coil Spring Suspension",
+        "code": "AH"
+      },
+      {
+        "name": "Coil Springs",
+        "code": "AI"
+      },
+      {
+        "name": "Shock Absorbers",
+        "code": "AJ"
+      },
+      {
+        "name": "Axle Mounting ",
+        "code": "AK"
+      },
+      {
+        "name": "Control Arm Joint",
+        "code": "AL"
+      },
+      {
+        "name": "Swing Arm Joint",
+        "code": "AM"
+      },
+      {
+        "name": "Stabilizer/ Fastening Parts",
+        "code": "AN"
+      },
+      {
+        "name": "Wheel Hubs ",
+        "code": "AO"
+      },
+      {
+        "name": "Mounting",
+        "code": "AP"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Body Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Exterior Body Parts ",
+        "code": "AQ"
+      },
+      {
+        "name": "Bumper parts",
+        "code": "AR"
+      },
+      {
+        "name": "Covers/ Caps",
+        "code": "AS"
+      },
+      {
+        "name": "Spoilers ",
+        "code": "AT"
+      },
+      {
+        "name": "Wings/ Parts",
+        "code": "AU"
+      },
+      {
+        "name": "Fenders",
+        "code": "AV"
+      },
+      {
+        "name": "Grills ",
+        "code": "AW"
+      },
+      {
+        "name": "Hatches ",
+        "code": "AX"
+      },
+      {
+        "name": "Bonnets",
+        "code": "AY"
+      },
+      {
+        "name": "Side Doors",
+        "code": "AZ"
+      },
+      {
+        "name": "Rear Doors",
+        "code": "BA"
+      },
+      {
+        "name": "Sunroof ",
+        "code": "BB"
+      },
+      {
+        "name": "Folding Roof",
+        "code": "BC"
+      },
+      {
+        "name": "Headlight/ Parts",
+        "code": "BD"
+      },
+      {
+        "name": "Fog Light",
+        "code": "BE"
+      },
+      {
+        "name": "Stop Light/ Break Light",
+        "code": "BF"
+      },
+      {
+        "name": "Tail Light",
+        "code": "BG"
+      },
+      {
+        "name": "Reverse Light",
+        "code": "BH"
+      },
+      {
+        "name": "Signal Light",
+        "code": "BI"
+      },
+      {
+        "name": "Spotlight",
+        "code": "BJ"
+      },
+      {
+        "name": "Windscreens",
+        "code": "BK"
+      },
+      {
+        "name": "Mirrors ",
+        "code": "BL"
+      },
+      {
+        "name": "Interior Body parts",
+        "code": "BM"
+      },
+      {
+        "name": "Dashboard",
+        "code": "BN"
+      },
+      {
+        "name": "Dashboard Meters ",
+        "code": "BO"
+      },
+      {
+        "name": "Wheels, Rims",
+        "code": "BP"
+      },
+      {
+        "name": "Tyres ",
+        "code": "BQ"
+      },
+      {
+        "name": "Exhausts & Exhaust Parts",
+        "code": "BR"
+      },
+      {
+        "name": "Lorry Bodies",
+        "code": "BS"
+      },
+      {
+        "name": "Lory Refrigerators",
+        "code": "BT"
+      },
+      {
+        "name": "Pins/ Bush",
+        "code": "BU"
+      },
+      {
+        "name": "Cutters/ Side Cutters",
+        "code": "BV"
+      },
+      {
+        "name": "Buckets/ Parts",
+        "code": "BW"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Brake / Accessories:",
+    "vehicleSubPart": [
+      {
+        "name": "Brake hydraulics",
+        "code": "BX"
+      },
+      {
+        "name": "Brake Hoses",
+        "code": "BY"
+      },
+      {
+        "name": "Brake Pads/Washers ",
+        "code": "BZ"
+      },
+      {
+        "name": "Brake Light Switches",
+        "code": "CA"
+      },
+      {
+        "name": "Brake Master Cylinder",
+        "code": "CB"
+      },
+      {
+        "name": "Control Levers/ Cables",
+        "code": "CC"
+      },
+      {
+        "name": "Dish Brake Parts/Accessories",
+        "code": "CD"
+      },
+      {
+        "name": "Drum Brake",
+        "code": "CE"
+      },
+      {
+        "name": "Handbrake",
+        "code": "CF"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Cooling System/ Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Radiator ",
+        "code": "CG"
+      },
+      {
+        "name": "Radiator Fan",
+        "code": "CH"
+      },
+      {
+        "name": "Oil Cooler",
+        "code": "CI"
+      },
+      {
+        "name": "Air Cooler",
+        "code": "CJ"
+      },
+      {
+        "name": "Thermostat",
+        "code": "CK"
+      },
+      {
+        "name": "Gasket",
+        "code": "CL"
+      },
+      {
+        "name": "Water Pump",
+        "code": "CM"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Engine / Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Engines  ",
+        "code": "CN"
+      },
+      {
+        "name": "Engine Parts",
+        "code": "CO"
+      },
+      {
+        "name": "Belts /Belt Drive",
+        "code": "CP"
+      },
+      {
+        "name": "Alternator Freewheel Clutch Belts",
+        "code": "CQ"
+      },
+      {
+        "name": "Belt Pulley",
+        "code": "CR"
+      },
+      {
+        "name": "V-Ribbed Belt/set",
+        "code": "CS"
+      },
+      {
+        "name": "Crankcase",
+        "code": "CT"
+      },
+      {
+        "name": "Crankshaft Drive",
+        "code": "CU"
+      },
+      {
+        "name": "Flywheel",
+        "code": "CV"
+      },
+      {
+        "name": "Oil seals",
+        "code": "CW"
+      },
+      {
+        "name": "Cylinder Head /Parts",
+        "code": "CX"
+      },
+      {
+        "name": "Cylinder Head Bolt",
+        "code": "CY"
+      },
+      {
+        "name": "Cylinder Head Cover/ Gasket",
+        "code": "CZ"
+      },
+      {
+        "name": "Intake Manifold Gasket/ Sealing Ring",
+        "code": "DA"
+      },
+      {
+        "name": "Radiator Horses/ Gasket ",
+        "code": "DB"
+      },
+      {
+        "name": "Valve guide/stream",
+        "code": "DC"
+      },
+      {
+        "name": "Seal/parts",
+        "code": "DD"
+      },
+      {
+        "name": "Engine Air Supply ",
+        "code": "DE"
+      },
+      {
+        "name": "Charger (Turbo/ supercharger)",
+        "code": "DF"
+      },
+      {
+        "name": "Engine Electronics",
+        "code": "DG"
+      },
+      {
+        "name": "Engine Mounting",
+        "code": "DH"
+      },
+      {
+        "name": "Engine Timing Chain",
+        "code": "DI"
+      },
+      {
+        "name": "Engine Tensioner/Guide",
+        "code": "DJ"
+      },
+      {
+        "name": "Valve Parts",
+        "code": "DK"
+      },
+      {
+        "name": "Gaskets",
+        "code": "DL"
+      },
+      {
+        "name": "CV Joints",
+        "code": "DM"
+      },
+      {
+        "name": "Ball Joints",
+        "code": "DN"
+      },
+      {
+        "name": "Bearings ",
+        "code": "DO"
+      },
+      {
+        "name": "Carburetor",
+        "code": "DP"
+      },
+      {
+        "name": "Cylinder Heads /Kits",
+        "code": "DQ"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Clutch/ Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Master Cylinder",
+        "code": "DR"
+      },
+      {
+        "name": "Slave Cylinder",
+        "code": "DS"
+      },
+      {
+        "name": "Clutch Disk",
+        "code": "DT"
+      },
+      {
+        "name": "Pressure Plate",
+        "code": "DU"
+      },
+      {
+        "name": "Flywheel",
+        "code": "DV"
+      },
+      {
+        "name": "Clutch Release",
+        "code": "DW"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Electric / Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Alternator/Parts",
+        "code": "DX"
+      },
+      {
+        "name": "Axillary Lights/ Parts",
+        "code": "DY"
+      },
+      {
+        "name": "Battery",
+        "code": "DZ"
+      },
+      {
+        "name": "Control Unit",
+        "code": "EA"
+      },
+      {
+        "name": "Harness ",
+        "code": "EB"
+      },
+      {
+        "name": "Headlight Parts",
+        "code": "EC"
+      },
+      {
+        "name": "Sender Units",
+        "code": "ED"
+      },
+      {
+        "name": "Sensor",
+        "code": "EE"
+      },
+      {
+        "name": "Light Switches",
+        "code": "EF"
+      },
+      {
+        "name": "Relays",
+        "code": "EG"
+      },
+      {
+        "name": "Controls",
+        "code": "EH"
+      },
+      {
+        "name": "Starter Systems",
+        "code": "EI"
+      },
+      {
+        "name": "Starter Motor",
+        "code": "EJ"
+      },
+      {
+        "name": "CDI",
+        "code": "EK"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Filters:",
+    "vehicleSubPart": [
+      {
+        "name": "Air Filters",
+        "code": "EL"
+      },
+      {
+        "name": "Fuel Filters",
+        "code": "EM"
+      },
+      {
+        "name": "Hydraulic Filters",
+        "code": "EN"
+      },
+      {
+        "name": "Oil Filters",
+        "code": "EO"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Fuel Pump/ Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Fuel Sender Unit",
+        "code": "EP"
+      },
+      {
+        "name": "Fuel Tank/ Parts",
+        "code": "EQ"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Steering Parts:",
+    "vehicleSubPart": [
+      {
+        "name": "Steering Rack",
+        "code": "ER"
+      },
+      {
+        "name": "Steering Gear",
+        "code": "ES"
+      },
+      {
+        "name": "Rotary Valve",
+        "code": "ET"
+      },
+      {
+        "name": "Power Steering Pump ",
+        "code": "EU"
+      },
+      {
+        "name": "Steering Joints",
+        "code": "EV"
+      },
+      {
+        "name": "Steering Wheels",
+        "code": "EW"
+      },
+      {
+        "name": "Tie Rod Assembly/ Parts",
+        "code": "EX"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Transmission / Parts: ",
+    "vehicleSubPart": [
+      {
+        "name": "Automatic Gearbox",
+        "code": "EY"
+      },
+      {
+        "name": "Automatic Transmission Parts",
+        "code": "EZ"
+      },
+      {
+        "name": "Manual Gearbox",
+        "code": "FA"
+      },
+      {
+        "name": "Manual Transmission Parts",
+        "code": "FB"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Hydraulics/ Part:",
+    "vehicleSubPart": [
+      {
+        "name": "Pumps/ Parts",
+        "code": "FC"
+      },
+      {
+        "name": "Main Control Valve",
+        "code": "FD"
+      },
+      {
+        "name": "Hydraulic Piston/ Parts",
+        "code": "FE"
+      },
+      {
+        "name": "Cylinder/ Parts",
+        "code": "FF"
+      },
+      {
+        "name": "Oil Seals",
+        "code": "FG"
+      },
+      {
+        "name": "Hydraulic Seals",
+        "code": "FH"
+      },
+      {
+        "name": "Hydraulic Horse ",
+        "code": "FI"
+      },
+      {
+        "name": "O rings",
+        "code": "FJ"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Seats and Covers:",
+    "vehicleSubPart": [
+      {
+        "name": "Imported Seats",
+        "code": "FK"
+      },
+      {
+        "name": "Custom Made Seats",
+        "code": "FL"
+      },
+      {
+        "name": "Seat Covers",
+        "code": "FM"
+      }
+    ]
+  },
+  {
+    "vehiclePart": "Accessories:",
+    "vehicleSubPart": [
+      {
+        "name": "Body Kits",
+        "code": "FN"
+      },
+      {
+        "name": "Alloy Wheels",
+        "code": "FO"
+      },
+      {
+        "name": "Lights/ LED",
+        "code": "FP"
+      },
+      {
+        "name": "Electronics",
+        "code": "FQ"
+      },
+      {
+        "name": "TV, Radio, ",
+        "code": "FR"
+      },
+      {
+        "name": "Audio sets",
+        "code": "FS"
+      },
+      {
+        "name": "Sound Systems",
+        "code": "FT"
+      },
+      {
+        "name": "Reverse Camera,",
+        "code": "FU"
+      },
+      {
+        "name": "Dashboard Cameras DVR",
+        "code": "FV"
+      },
+      {
+        "name": "Stickers",
+        "code": "FW"
+      }
+    ]
+  }
+]
