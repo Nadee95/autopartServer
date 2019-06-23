@@ -11,7 +11,7 @@ var DIR = './public/business';
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './public/business')
+    cb(null, './uploads')
   },
   filename: function (req, file, cb) {
     let o = file.originalname;
@@ -26,7 +26,8 @@ var upload = multer({ storage: storage }).array('files',4);
 router.post('/add', function (req, res, next) {
   upload(req, res, function (err) {
     if (err) {
-      return res.json({ status: 500, message: "upload_error" });
+      console.log(err)
+      return res.status(500).json({message: "upload_error", data:err });
     }
     next();
   })
@@ -46,9 +47,9 @@ router.post('/add', function (req, res, next) {
    
     business.save(function (err) {
       if (err) {
-        return res.json({ status: 500, message: "ERROR_CREATE", data: err.message });
+        return res.status(500).json({message: "ERROR_CREATE", data: err.message });
       }
-      return res.json({ status: 200, message: "SUCCESSFUL" });
+      return res.status(200).json({message: "SUCCESSFUL" });
     });
   });
 //////////////////// 
