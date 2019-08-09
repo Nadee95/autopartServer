@@ -5,13 +5,13 @@ var mongoose = require('mongoose')
 var multer = require('multer');
 var namify = require('filenamify');
 //set the directory for the uploads to the uploaded to
-var DIR = './public/business';
+var DIR = './public/business_img';
 
 //gives full access
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads')
+    cb(null, DIR)
   },
   filename: function (req, file, cb) {
     let o = file.originalname;

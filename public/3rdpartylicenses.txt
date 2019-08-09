@@ -318,15 +318,6 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 END OF TERMS AND CONDITIONS
 
 
-@angular/common
-MIT
-
-@angular/platform-browser
-MIT
-
-@ionic-native/core
-MIT
-
 ionic-selectable
 See license in LICENSE
 MIT License
@@ -351,6 +342,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
+@angular/common
+MIT
+
+@angular/platform-browser
+MIT
+
+@ionic-native/core
+MIT
 
 @angular/router
 MIT
