@@ -1,0 +1,1 @@
+module.exports={tokenKey:"Aut0M0Bil3P@rt$.Lk"}
