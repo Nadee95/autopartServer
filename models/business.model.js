@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
-
-var Schema = mongoose.Schema();
+const mongoosePaginate = require('mongoose-paginate-v2');
 
 var businessSchema = new mongoose.Schema({
 
@@ -18,5 +17,5 @@ var businessSchema = new mongoose.Schema({
         lon:Number},
     parts:[String]
 });
-
+businessSchema.plugin(mongoosePaginate);
 module.exports = mongoose.model('Business',businessSchema );

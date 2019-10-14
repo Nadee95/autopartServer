@@ -98,13 +98,28 @@ router.get('/', function (req, res, next) {
   if (search) {
     Business.find({ $text: { $search: search } }, { bName: 1, owner: 1, address: 1 }, (function (err, business) {
       if (err) {
-        return res.json({ status: 500, message: "ERROR_SEARCH", data: err.message });
+        return res.status(500).json({message: "ERROR_SEARCH", data: err.message });
       }
       return res.json(business);
     })
     );
+  }else{
+    let limit = req.query.limit;
+    let page = req.query.page;
+    if(!limit){
+      limit = 25;
+    }
+    if(!page){
+      page = 1;
+    }
+    Business.paginate({},{select:'bName address district owner imageIds',limit:limit,page:page},(function(err,result){
+      if(err){
+        return res.json({ status: 500, message: "ERROR", data: err.message });
+      }
+      return res.status('200').json(result);
+    }));
   }
-})
+});
 
 router.get('/findByPart', function (req, res, next) {
   let tag = req.query.tag;
