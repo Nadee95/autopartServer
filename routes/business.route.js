@@ -92,7 +92,6 @@ router.post('/:businessId/deleteParts', function (req, res, next) {
   );
 })
 
-
 router.get('/', function (req, res, next) {
   let search = req.query.search;
   if (search) {
@@ -169,6 +168,7 @@ router.get('/:id/info', function (req, res, next) {
   } else {
     return res.status(304).json({ message: "NO_ID" });
   }
+  
 })
 
 router.get('/:id/getPartVTypes', function (req, res, next) {
