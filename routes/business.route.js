@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
   filename: function (req, file, cb) {
     let o = file.originalname;
     let ext = o.substring(o.lastIndexOf('.'), o.length);
-    let fname = namify(req.body.bName + '-' + Date.now() + ext).replace(' ','_');
+    let fname = namify((req.body.bName).trim() + '-' + Date.now() + ext).replace(' ','_');
     cb(null, fname);
   }
 });
@@ -33,10 +33,12 @@ router.post('/add', function (req, res, next) {
   })
 },
   function (req, res) {
-    console.log(req.body);
-    var business = new Business(req.body);
+   
+    var business = req.body;
     business.location = JSON.parse(req.body.location);
     business.contacts = req.body.contacts.split(",");
+    console.log(req.body.contacts);
+    business.imageIds = JSON.parse(req.body.imageIds);
     req.files.forEach(file => {
      business.imageIds.push(file.filename);
     });
@@ -44,12 +46,12 @@ router.post('/add', function (req, res, next) {
     //business.content.fileType=req.file.mimetype;
     //var o = req.file.originalname;
     //let ext = o.substring(o.lastIndexOf('.'), o.length);
-   
-    business.save(function (err) {
+    console.log(business);
+    Business.findOneAndUpdate({_id:req.body.bid || mongoose.Types.ObjectId() },business,{new:true, upsert: true},function (err,data) {
       if (err) {
         return res.status(500).json({message: "ERROR_CREATE", data: err.message });
       }
-      return res.status(200).json({message: "SUCCESSFUL" });
+      return res.status(200).json({message: "SUCCESSFUL", business: data});
     });
   });
 //////////////////// 
