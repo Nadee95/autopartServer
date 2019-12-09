@@ -46,7 +46,7 @@ router.post('/add', function (req, res, next) {
     //business.content.fileType=req.file.mimetype;
     //var o = req.file.originalname;
     //let ext = o.substring(o.lastIndexOf('.'), o.length);
-    console.log(business);
+    console.log(req.files);
     Business.findOneAndUpdate({_id:req.body.bid || mongoose.Types.ObjectId() },business,{new:true, upsert: true},function (err,data) {
       if (err) {
         return res.status(500).json({message: "ERROR_CREATE", data: err.message });
