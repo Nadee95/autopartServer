@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
   filename: function (req, file, cb) {
     let o = file.originalname;
     let ext = o.substring(o.lastIndexOf('.'), o.length);
-    let fname = namify((req.body.bName).trim() + '-' + Date.now() + ext).replace(' ','_');
+    let fname = namify(req.body.bName + '-' + Date.now() + ext).replace(' ','_');
     cb(null, fname);
   }
 });
@@ -37,8 +37,11 @@ router.post('/add', function (req, res, next) {
     var business = req.body;
     business.location = JSON.parse(req.body.location);
     business.contacts = req.body.contacts.split(",");
-    console.log(req.body.contacts);
-    business.imageIds = JSON.parse(req.body.imageIds);
+    business.imageIds=[];
+    console.log(req.body.imageIds);
+    if(req.body.imageIds && req.body.imageIds.length>0){
+          business.imageIds = JSON.parse(req.body.imageIds);
+    }
     req.files.forEach(file => {
      business.imageIds.push(file.filename);
     });
